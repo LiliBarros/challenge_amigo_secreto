@@ -1,2 +1,20 @@
-//O principal objetivo deste desafio é fortalecer suas habilidades em lógica de programação. Aqui você deverá desenvolver a lógica para resolver o problema.
-// estudar programação nunca foi tão fácil
+
+let amigos = [];
+
+let sorteados = []
+
+function adicionarAmigo(){
+    const inputAmigo = document.getElementById('amigo')
+    const nomeAmigo = inputAmigo.ariaValueMax.trim();
+
+    if (nome=== ""){
+        alert("por favor,insira um nome;");
+        return;
+    }
+    if(amigos.includes(nomeAmigo)){
+        alert(`O nome ${nomeAmigo}já está na lista);
+        return;
+    }
+
+
+}
