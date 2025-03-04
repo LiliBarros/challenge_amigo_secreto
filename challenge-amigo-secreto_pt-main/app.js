@@ -2,20 +2,20 @@ let amigos = [];
 
 function adicionarAmigo() {
     const inputAmigo = document.getElementById('amigo');
-    const nomeAmigo = inputAmigo.value.trim(); // Corrigido para pegar o valor do input
+    const nomeAmigo = inputAmigo.value.trim();
 
-    if (nomeAmigo === "") { // Corrigido para comparar corretamente
+    if (nomeAmigo === "") { 
         alert("Por favor, insira um nome.");
         return;
     }
 
-    if (amigos.includes(nomeAmigo)) { // Adicionado {} para evitar erro de escopo
+    if (amigos.includes(nomeAmigo)) { 
         alert(`O nome "${nomeAmigo}" já está na lista.`);
         return;
     }
 
     amigos.push(nomeAmigo);
-    inputAmigo.value = ""; // Limpa o campo após adicionar
+    inputAmigo.value = ""; 
     atualizarLista();
 }
 
@@ -30,7 +30,7 @@ function atualizarLista() {
     }
 }
 
-function sortearAmigos() {
+function sortearAmigo() {
     if (amigos.length === 0) {
         alert("Não tem amigos disponíveis para sortear. Adicione ao menos um.");
         return;
